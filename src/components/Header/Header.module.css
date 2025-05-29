@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    box-sizing:border-box;
+    text-decoration: none
+
+  }
+
+.header{
+background-color:pink;
+
+   
+}
+.icon_wrapper{
+    display: flex;
+  justify-content: center;
+
+}
+.icon_menu{
+    display: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+
+.menu_link {
+    list-style-type: none;
+}
+
+.menu_list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    padding:10px 65px 10px 65px;
+   
+  
+}
+.menu_none{
+    display: flex;
+
+    justify-content: space-between;
+    font-size: 30px;
+    padding: 10px 65px 10px 65px;
+   } 
+    
+
+.nav_link {
+    color:black;
+    display: flex;
+    align-items: center;
+    
+}
+.nav_link:hover {
+    color:rgb(194, 8, 227);
+   
+    
+}
+.nav_link:global.active {
+    color : white
+}
+.count {
+   position: relative;
+   list-style-type: none;
+
+}
+
+.menu_list>li:hover{
+    cursor: pointer;
+
+}
+
+.wrapper_buttons{
+    display: flex;
+     border: solid 2px black;
+    background-color: aqua;
+    align-items: center;
+    border-radius: 40px;
+    padding: 0px 10px 0px 10px;
+}
+.count{
+    border-right: solid 2px black;
+    padding-right: 5px;
+    padding-left: 5px;
+    
+}
+.total{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.button_header{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: red;
+    background-color: rgb(0, 255, 191);
+    cursor:  pointer;
+}
+
+
+.header{position: fixed;
+width:100% ;
+top: 0;
+left: 0;
+z-index: 99;
+
+}
+
+
+@media (max-width: 1024px) {
+   .menu_none{font-size: 20px;} 
+   .menu_list{font-size: 20px;} 
+}
+
+@media (max-width: 768px) {
+    .header{
+
+    font-size: 15px;
+    
+    
+    }
+    
+    .icon_menu{
+        display: block;
+        z-index: 10;
+  
+       
+    }
+    .menu_list{
+        flex-direction: column;
+        align-items: center;
+        position: absolute; 
+        width: 100%;
+        background-color: rgba(255, 192, 203, 0.9);
+        
+        transition: transform 0.3s ease-in-out; }
+     .menu_none{
+        display: none;
+     }
+    
+}
+@media (max-width: 576px) {
+   
+    .header{
+
+    font-size: 12px;
+    
+    
+    }
+
+}
+
+@media (max-width: 395px) {
+    .header{
+
+    font-size: 12px;
+    
+    
+    }
+    .count_position{
+        left: 40%;
+       
+        font-size: 7px;
+    }
+    .container1{padding-left: 0;
+    padding-right: 0;}
+}

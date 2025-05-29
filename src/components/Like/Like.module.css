@@ -1,0 +1,33 @@
+.like>path {
+    color: red; 
+  
+    cursor: pointer;
+  }
+  .like{
+    width: 20px;
+    height: 20px;
+  }
+  .no_like{
+    width: 20px;
+    height: 20px;
+  }
+  .button_like {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(119, 181, 184);
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  .button_like:hover {
+    background-color: orange;
+    border-radius: 15px;
+    border: none;
+  }
+  
+  
+  .no_like>path {
+    cursor: pointer;
+    fill: white;
+   
+  }

@@ -1,0 +1,63 @@
+.wrapper {
+   
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+.icon_search{
+    position:relative ;
+    top: 15px;
+    left: 40px;
+   
+   
+
+}
+.clear_input{
+    position: relative;
+    top: 15px;
+    left: 280px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+.clear_input:hover{
+    opacity: 1;
+}
+.input{
+    
+    width: 300px;
+    padding: 15px 45px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    outline: none;
+font-size: 15px;
+}
+.input:focus{
+    border: 1px solid #3610de;
+ 
+}
+@media (max-width: 768px) {
+    .wrapper {
+        padding-top: 330px;
+    }
+    .input{
+        width: 270px;
+        padding: 10px 20px;
+        text-align: center;
+    }
+    .icon_search{
+       
+        top: 10px;
+        left: 30px;
+       
+       
+    
+    }
+    .clear_input{
+        
+        top: 10px;
+        left: 210px;
+        opacity: 0.3;
+        cursor: pointer;
+    }
+}

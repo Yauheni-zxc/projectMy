@@ -1,0 +1,40 @@
+.theme{
+  display: flex;
+  align-items: center;
+    border: solid 1px orange;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: white;
+  }
+
+  .light {
+    background-color: white;
+    color: black;
+  }
+  .theme:hover {
+    background-color:rgb(72, 76, 169);
+    color: black;
+  }
+  .dark{
+    background-color:black;
+    color: white;
+  }
+
+  .theme:hover> .light {
+    background-color: black;
+    color: white;
+  }
+  .theme:hover> .dark {
+    background-color:white;
+    color: black;
+  }
+
+
+
+
+
+
+  
